@@ -1,0 +1,13 @@
+{
+  "actions": {
+    "refreshPage": ""
+  },
+  "notFound": "",
+  "pages": {
+    "aboutUs": "",
+    "main": "",
+    "notFound": ""
+  },
+  "signIn": "",
+  "unexpectedError": ""
+}

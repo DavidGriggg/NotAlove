@@ -1,0 +1,19 @@
+{
+  "signIn": "Entrer",
+  "languages": {
+    "ru": "Russe",
+    "en": "Anglais",
+    "es": "Espagnol",
+    "fr": "Français",
+    "de": "Allemand"
+  },
+  "pages": {
+    "main": "Page d'accueil",
+    "aboutUs": "À propos de nous",
+    "notFound": "Page non trouvée"
+  },
+  "actions": {
+    "refreshPage": "Actualiser la page"
+  },
+  "unexpectedError": "Une erreur inattendue est apparue..."
+}

@@ -1,0 +1,19 @@
+{
+  "signIn": "Anmelden",
+  "languages": {
+    "ru": "Russisch",
+    "en": "Englisch",
+    "es": "Spanisch",
+    "fr": "Französisch",
+    "de": "Deutsch"
+  },
+  "pages": {
+    "main": "Startseite",
+    "aboutUs": "Über uns",
+    "notFound": "Seite nicht gefunden"
+  },
+  "actions": {
+    "refreshPage": "Lade die Seite neu"
+  },
+  "unexpectedError": "Ein unerwarteter Fehler ist aufgetreten..."
+}

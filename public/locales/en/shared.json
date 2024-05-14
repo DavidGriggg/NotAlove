@@ -1,0 +1,19 @@
+{
+  "signIn": "Sign in",
+  "languages": {
+    "ru": "Russian",
+    "en": "English",
+    "es": "Spanish",
+    "fr": "French",
+    "de": "German"
+  },
+  "pages": {
+    "main": "Main",
+    "aboutUs": "About us",
+    "notFound": "Page is not found"
+  },
+  "actions": {
+    "refreshPage": "Refresh page"
+  },
+  "unexpectedError": "An unexpected error has occurred..."
+}
