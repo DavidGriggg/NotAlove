@@ -8,7 +8,8 @@
   &:hover {
     color: var(--accent);
 
-    .addonLeft svg, .addonRight svg {
+    .addonLeft svg,
+    .addonRight svg {
       color: var(--accent);
     }
   }
@@ -18,7 +19,8 @@
   padding: 0 16px;
 }
 
-.addonLeft, .addonRight {
+.addonLeft,
+.addonRight {
   display: flex;
 }
 

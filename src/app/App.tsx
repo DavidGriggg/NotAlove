@@ -1,7 +1,7 @@
 import { memo, Suspense } from "react";
 import { AppRouter } from "./providers/Router";
 import { classNames } from "@/shared/lib/classNames/classNames";
-import { useTheme } from "@/shared/hooks/useTheme";
+import { useTheme } from "../shared/hooks/useTheme/useTheme";
 import { MainLayout } from "@/shared/layouts/MainLayout";
 import { Sidebar } from "@/widgets/Sidebar";
 import { Header } from "@/widgets/Header";

@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-.normal {
-  background: var(--dark-bg);
-}
-
 .light {
   background: var(--light-bg);
 }
@@ -19,6 +15,7 @@
 }
 
 .normal {
+  background: var(--dark-bg);
   border-radius: 12px;
 }
 

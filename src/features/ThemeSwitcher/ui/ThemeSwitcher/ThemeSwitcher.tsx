@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { useTheme } from "@/shared/hooks/useTheme";
+import { useTheme } from "@/shared/hooks/useTheme/useTheme";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import { Icon } from "@/shared/ui/Icon";
 import ThemeIcon from "@/shared/assets/icons/theme.svg";

@@ -21,14 +21,14 @@ const mapDirectionClass: Record<DropdownDirection, string> = {
 };
 
 export interface ListBoxItem<T extends string> {
-    value: string;
+    value: T;
     content: ReactNode;
     disabled?: boolean;
 }
 
 interface ListBoxProps<T extends string> {
     items?: ListBoxItem<T>[];
-    value?: T;
+    value: T;
     defaultValue?: string;
     onChange: (value: T) => void;
     className?: string;
@@ -49,11 +49,12 @@ export const ListBox = <T extends string>(props: ListBoxProps<T>) => {
         label,
     } = props;
 
-    const optionsClasses: any[] = [mapDirectionClass[direction], cls.menu];
+    const optionsClasses: string[] = [mapDirectionClass[direction], cls.menu];
 
     const selectedItem = useMemo(() => {
-        // @ts-ignore
-        return items?.find((item) => item.value === value);
+        if (items) {
+            return items.find((item) => item.value === value);
+        }
     }, [items, value]);
 
     return (
@@ -79,7 +80,7 @@ export const ListBox = <T extends string>(props: ListBoxProps<T>) => {
                 >
                     {items?.map((item) => (
                         <IListbox.Option
-                            value={item?.value as any}
+                            value={item.value}
                             disabled={Boolean(disabled)}
                             key={item?.value}
                             as="div"

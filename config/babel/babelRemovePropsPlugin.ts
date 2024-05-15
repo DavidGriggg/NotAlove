@@ -4,12 +4,12 @@ export default function (): PluginItem {
     return {
         visitor: {
             Program(path, state) {
-                const forbidden = state.opts.props || [];
+                const forbidden: string[] = state.opts.props || [];
                 path.traverse({
                     JSXIdentifier(current) {
                         const nodeName = current.node.name;
 
-                        if ((forbidden as any).includes(nodeName)) {
+                        if (forbidden.includes(nodeName)) {
                             current.parentPath.remove();
                         }
                     },

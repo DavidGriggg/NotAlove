@@ -20,7 +20,8 @@
   height: 44px;
 }
 
-.addonLeft, .addonRight {
+.addonLeft,
+.addonRight {
   display: flex;
 }
 
@@ -35,7 +36,8 @@
 .focused {
   border: 2px solid var(--accent);
 
-  .addonLeft svg, .addonRight svg {
+  .addonLeft svg,
+  .addonRight svg {
     color: var(--accent);
   }
 }

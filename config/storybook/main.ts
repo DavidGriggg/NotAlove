@@ -36,7 +36,7 @@ const config: StorybookConfig = {
     docs: {
         autodocs: "tag",
     },
-    webpackFinal: async (config, { configType }) => {
+    webpackFinal: async (config) => {
         const paths: BuildPaths = {
             build: "",
             html: "",
@@ -45,10 +45,11 @@ const config: StorybookConfig = {
         };
         config.resolve.modules.push(paths.src);
         config.resolve.extensions.push(".ts", ".tsx");
+        // @ts-ignore
         config.resolve.alias = {
             ...config.resolve.alias,
             "@": paths.src,
-        } as any;
+        };
 
         config.module.rules = config.module.rules.map((rule: RuleSetRule) => {
             if (/svg/.test(rule.test as string)) {
