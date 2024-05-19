@@ -53,7 +53,7 @@
     border: 2px solid var(--cancel);
 
     &:hover {
-      color: #fff;
+      color: var(--cancel);
     }
   }
 
@@ -61,7 +61,7 @@
     border: 2px solid var(--save);
 
     &:hover {
-      color: #fff;
+      color: var(--save);
     }
   }
 }

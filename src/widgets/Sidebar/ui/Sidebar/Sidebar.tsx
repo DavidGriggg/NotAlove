@@ -1,8 +1,9 @@
-import { memo, useMemo, useState } from "react";
+import { memo, useMemo, useState, useEffect } from "react";
 import cls from "./Sidebar.module.scss";
 import { classNames } from "@/shared/lib/classNames/classNames";
 import { SidebarItem } from "../SidebarItem/SidebarItem";
-import { sidebarItemsList } from "../../model/config/sidebar";
+import { getSidebarItemsList } from "../../model/config/sidebar";
+import { SidebarItemType } from "@/widgets/Sidebar/model/types/sidebar";
 import { ThemeSwitcher } from "@/features/ThemeSwitcher";
 import { LangSwitcher } from "@/features/LangSwitcher";
 import { Icon } from "@/shared/ui/Icon";
@@ -12,10 +13,18 @@ import ArrowIcon from "@/shared/assets/icons/arrow-bottom.svg";
 
 interface SidebarProps {
     className?: string;
+    userId: string;
 }
 
-export const Sidebar = memo(({ className }: SidebarProps) => {
+export const Sidebar = memo(({ className, userId }: SidebarProps) => {
     const [collapsed, setCollapsed] = useState<boolean>(false);
+    const [sidebarItemsList, setSidebarItemsList] = useState<SidebarItemType[]>(
+        []
+    );
+
+    useEffect(() => {
+        setSidebarItemsList(getSidebarItemsList(userId));
+    }, [userId]);
 
     const onToggle = () => {
         setCollapsed(!collapsed);

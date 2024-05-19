@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "david",
+      "password": "123"
+    },
+    {
+      "id": "2",
+      "username": "eleonore",
+      "password": "123"
+    }
+  ],
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "David",
+      "lastname": "Grigorian",
+      "age": 19,
+      "country": "AM",
+      "city": "Simferopol",
+      "username": "david",
+      "avatar": "https://kartinki.pics/pics/uploads/posts/2022-09/1663690521_2-kartinkin-net-p-milaya-nemetskaya-ovcharka-instagram-2.jpg"
+    },
+    {
+      "id": "2",
+      "firstname": "Eleonore",
+      "lastname": "Gorlova",
+      "age": 17,
+      "country": "RU",
+      "city": "Simferopol",
+      "username": "eleonore",
+      "avatar": "https://kartinki.pics/pics/uploads/posts/2022-07/1658368575_44-kartinkin-net-p-doberman-milii-zhivotnie-krasivo-foto-46.jpg"
+    }
+  ]
+}

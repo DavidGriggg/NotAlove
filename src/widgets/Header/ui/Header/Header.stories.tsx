@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Header } from "./Header";
+import { StoreDecorator } from "@/shared/config/storybook/StoreDecorator/StoreDecorator";
 
 const meta = {
     title: "widgets/Header",
@@ -11,8 +12,16 @@ const meta = {
 
 type Story = StoryObj<Header>;
 
-export const Primary: Story = {
+export const NoAuth: Story = {
     args: {},
+    decorators: [StoreDecorator({ user: { authData: undefined } })],
+};
+
+export const Auth: Story = {
+    args: {},
+    decorators: [
+        StoreDecorator({ user: { authData: { id: "1", username: "david" } } }),
+    ],
 };
 
 export default meta;

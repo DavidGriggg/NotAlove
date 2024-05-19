@@ -1,5 +1,12 @@
 {
-  "signIn": "Anmelden",
+  "auth": {
+    "signIn": "Anmedlen",
+    "logOut": "Abmelden",
+    "enterUsername": "Login eingeben",
+    "enterPassword": "Passwort eingeben",
+    "authForm": "Autorisierungsformular",
+    "authIncorrect": "Sie haben einen falschen Benutzernamen oder ein falsches Passwort eingegeben"
+  },
   "languages": {
     "ru": "Russisch",
     "en": "Englisch",
@@ -10,10 +17,32 @@
   "pages": {
     "main": "Startseite",
     "aboutUs": "Über uns",
+    "profile": "Profil",
     "notFound": "Seite nicht gefunden"
   },
   "actions": {
-    "refreshPage": "Lade die Seite neu"
+    "refreshPage": "Lade die Seite neu",
+    "edit": "Bearbeiten",
+    "cancel": "Stornieren",
+    "save": "Speichern",
+    "search": "Suchen..."
   },
-  "unexpectedError": "Ein unerwarteter Fehler ist aufgetreten..."
+  "unexpectedError": "Ein unerwarteter Fehler ist aufgetreten...",
+  "profile": {
+    "yourFirstname": "Name",
+    "yourLastname": "Nachname",
+    "yourAge": "Alter",
+    "yourCity": "Stadt",
+    "yourCountry": "Land",
+    "yourUsername": "Benutzername",
+    "yourAvatar": "Link zum Avatar",
+    "fetchProfileError": "Beim Laden Ihres Profils ist ein Fehler aufgetreten",
+    "notFound": "Profil nicht gefunden",
+    "errors": {
+      "INCORRECT_USER_DATA": "Falscher Vor- oder Nachname",
+      "INCORRECT_AGE": "Falsches Alter",
+      "NO_DATA": "Keine Daten",
+      "SERVER_ERROR": "Ein Serverfehler ist aufgetreten"
+    }
+  }
 }

@@ -1,0 +1,34 @@
+.select {
+  color: var(--text) !important;
+  background: none !important;
+  border: 2px solid var(--icon) !important;
+  border-radius: 34px !important;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+ul {
+  border: 2px solid var(--icon) !important;
+  border-radius: 10px !important;
+  background: var(--dark-bg) !important;
+
+  div {
+    background: var(--dark-bg) !important;
+  }
+}
+
+li {
+  &:hover {
+    background: var(--light-bg) !important;
+  }
+}
+
+input[name="rfs-q"] {
+  background: none;
+  color: var(--text);
+  border: 2px solid var(--icon);
+  border-radius: 34px;
+  padding: 3px 10px;
+}

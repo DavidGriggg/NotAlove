@@ -12,16 +12,23 @@ interface ModalProps {
     isOpen?: boolean;
     onClose?: () => void;
     lazy?: boolean;
+    onOverlayClick?: () => void;
 }
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, isOpen, onClose, lazy } = props;
+    const { className, children, isOpen, onClose, lazy, onOverlayClick } =
+        props;
     const { close, isClosing, isMounted } = useModal({
         animationDelay: 300,
         onClose,
         isOpen,
     });
     const { theme } = useTheme();
+
+    const onClick = () => {
+        close();
+        onOverlayClick?.();
+    };
 
     const modes: Modes = {
         [cls.opened]: isOpen,
@@ -35,7 +42,7 @@ export const Modal = (props: ModalProps) => {
     return (
         <Portal element={document.getElementById("app") ?? document.body}>
             <div className={classNames(cls.Modal, modes, [className, theme])}>
-                <Overlay onClick={close} />
+                <Overlay onClick={onClick} />
                 <div className={cls.content}>{children}</div>
             </div>
         </Portal>

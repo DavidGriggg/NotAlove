@@ -1,5 +1,12 @@
 {
-  "signIn": "Entrar",
+  "auth": {
+    "signIn": "Entrar",
+    "logOut": "Cerrar",
+    "enterUsername": "Ingrese inicio de sesión",
+    "enterPassword": "Ingrese la contraseña",
+    "authForm": "Formulario de autorización",
+    "authIncorrect": "Ingresaste un nombre de usuario o contraseña incorrectos"
+  },
   "languages": {
     "ru": "Ruso",
     "en": "Inglés",
@@ -10,10 +17,32 @@
   "pages": {
     "main": "Pagina de inicio",
     "aboutUs": "Sobre nosotros",
+    "profile": "Perfil",
     "notFound": "Página no encontrada"
   },
   "actions": {
-    "refreshPage": "Recarga la página"
+    "refreshPage": "Recarga la página",
+    "edit": "Editar",
+    "cancel": "Cancelar",
+    "save": "Ahorrar",
+    "search": "Buscar..."
   },
-  "unexpectedError": "Ocurrió un error inesperado..."
+  "unexpectedError": "Ocurrió un error inesperado...",
+  "profile": {
+    "yourFirstname": "Nombre",
+    "yourLastname": "Apellido",
+    "yourAge": "Edad",
+    "yourCity": "Ciudad",
+    "yourCountry": "País",
+    "yourUsername": "Nombre de usuario",
+    "yourAvatar": "Enlace de avatar",
+    "fetchProfileError": "Hubo un error al cargar tu perfil.",
+    "notFound": "Perfil no encontrado",
+    "errors": {
+      "INCORRECT_USER_DATA": "Nombre o apellido incorrecto",
+      "INCORRECT_AGE": "Edad incorrecta",
+      "NO_DATA": "Sin datos",
+      "SERVER_ERROR": "Ha ocurrido un error de servidor"
+    }
+  }
 }

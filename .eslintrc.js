@@ -1,6 +1,7 @@
 module.exports = {
     env: {
         browser: true,
+        node: true,
         es2021: true,
     },
     settings: {
@@ -36,5 +37,6 @@ module.exports = {
         "react/prop-types": "off",
         "@typescript-eslint/no-unused-vars": "off",
         "@typescript-eslint/ban-ts-comment": "off",
+        "@typescript-eslint/no-var-requires": "off",
     },
 };

@@ -1,5 +1,12 @@
 {
-  "signIn": "Войти",
+  "auth": {
+    "signIn": "Войти",
+    "logOut": "Выйти",
+    "enterUsername": "Введите логин",
+    "enterPassword": "Введите пароль",
+    "authForm": "Форма авторизации",
+    "authIncorrect": "Вы ввели неверный логин или пароль"
+  },
   "languages": {
     "ru": "Русский",
     "en": "Английский",
@@ -10,10 +17,32 @@
   "pages": {
     "main": "Главная",
     "aboutUs": "О нас",
+    "profile": "Профиль",
     "notFound": "Страница не найдена"
   },
   "actions": {
-    "refreshPage": "Обновить страницу"
+    "refreshPage": "Обновить страницу",
+    "edit": "Редактировать",
+    "cancel": "Отменить",
+    "save": "Сохранить",
+    "search": "Искать..."
   },
-  "unexpectedError": "Произошла непредвиденная ошибка..."
+  "unexpectedError": "Произошла непредвиденная ошибка...",
+  "profile": {
+    "yourFirstname": "Имя",
+    "yourLastname": "Фамилия",
+    "yourAge": "Возраст",
+    "yourCity": "Город",
+    "yourCountry": "Страна",
+    "yourUsername": "Имя пользователя",
+    "yourAvatar": "Ссылка на аватар",
+    "fetchProfileError": "Произошла ошибка при загрузке профиля",
+    "notFound": "Профиль не найден",
+    "errors": {
+      "INCORRECT_USER_DATA": "Некорректное имя или фамилия",
+      "INCORRECT_AGE": "Некорректный возраст",
+      "NO_DATA": "Нет данных",
+      "SERVER_ERROR": "Произошла серверная ошибка"
+    }
+  }
 }

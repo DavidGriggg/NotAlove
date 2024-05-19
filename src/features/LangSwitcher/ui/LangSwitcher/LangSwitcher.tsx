@@ -12,10 +12,20 @@ interface LangSwitcherProps {
 
 export const LangSwitcher = memo(({ short }: LangSwitcherProps) => {
     const { i18n } = useTranslation();
+
     const formattedItems = getFormattedItems(items);
+
     const flags = getFlags(items);
     const currentFlag = flags.find(
         (item) => item.value === i18n.language
+    )?.content;
+    console.log(flags);
+
+    const defaultValue = formattedItems.find(
+        (item) => item.value === Language.RUSSIAN
+    )?.content;
+    const defaultValueFlag = flags.find(
+        (flag) => flag.value === Language.RUSSIAN
     )?.content;
 
     const onChange = useCallback((lng: string) => {
@@ -23,13 +33,13 @@ export const LangSwitcher = memo(({ short }: LangSwitcherProps) => {
     }, []);
 
     return short ? (
-        <>{currentFlag}</>
+        <>{currentFlag ?? defaultValueFlag}</>
     ) : (
         <ListBox<string>
             onChange={onChange}
             items={formattedItems}
             value={i18n.language}
-            defaultValue={Language.RUSSIAN}
+            defaultValue={defaultValue as string}
             direction="top left"
         />
     );

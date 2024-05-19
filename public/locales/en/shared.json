@@ -1,5 +1,12 @@
 {
-  "signIn": "Sign in",
+  "auth": {
+    "signIn": "Sign in",
+    "logOut": "Log out",
+    "enterUsername": "Enter username",
+    "enterPassword": "Enter password",
+    "authForm": "Authorization form",
+    "authIncorrect": "Entered username or password is incorrect"
+  },
   "languages": {
     "ru": "Russian",
     "en": "English",
@@ -10,10 +17,32 @@
   "pages": {
     "main": "Main",
     "aboutUs": "About us",
+    "profile": "Profile",
     "notFound": "Page is not found"
   },
   "actions": {
-    "refreshPage": "Refresh page"
+    "refreshPage": "Refresh page",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "search": "Search..."
   },
-  "unexpectedError": "An unexpected error has occurred..."
+  "unexpectedError": "An unexpected error has occurred...",
+  "profile": {
+    "yourFirstname": "Firstname",
+    "yourLastname": "Lastname",
+    "yourAge": "Age",
+    "yourCity": "City",
+    "yourCountry": "Country",
+    "yourUsername": "Username",
+    "yourAvatar": "Avatar link",
+    "fetchProfileError": "An error has occurred while fetching profile data",
+    "notFound": "Profile is not found",
+    "errors": {
+      "INCORRECT_USER_DATA": "Incorrect firstname or lastname",
+      "INCORRECT_AGE": "Incorrect age",
+      "NO_DATA": "No data",
+      "SERVER_ERROR": "A server error has occurred"
+    }
+  }
 }
