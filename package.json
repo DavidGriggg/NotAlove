@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://not-alove-has1.vercel.app/",
+  "homepage": "https://not-alove-97tv111111.vercel.app/",
   "scripts": {
     "start": "webpack serve",
     "start:dev:server": "node ./json-server/index.js",
